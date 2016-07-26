@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0B51458E4D7D4BA41FEC585E5AB909D29804FB8D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0B51458E4D7D4BA41FEC585E5AB909D29804FB8D" : 0,
+    "2019E4C7BE8307AB89630933A054EA02068DB0AD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "43A208CA-A493-49DC-BDC0-F0EF18FF3DEA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0B51458E4D7D4BA41FEC585E5AB909D29804FB8D" : "SnapDrag\/",
+    "2019E4C7BE8307AB89630933A054EA02068DB0AD" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SnapDrag",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SnapDrag.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rishi420\/SnapDrag.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0B51458E4D7D4BA41FEC585E5AB909D29804FB8D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/rishi420\/blink_20151101.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2019E4C7BE8307AB89630933A054EA02068DB0AD"
+    }
+  ]
+}
