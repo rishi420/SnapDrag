@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     let minDragDistanceToReleaseSnap = 7.0
     let snapDuringDecelerating = false
     
-    private var startSnapLocaion = CGPointZero
-    private var snapState: SnapState = .willSnap
+    fileprivate var startSnapLocaion = CGPoint.zero
+    fileprivate var snapState: SnapState = .willSnap
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,23 +42,23 @@ class ViewController: UIViewController {
 
 extension ViewController: UIScrollViewDelegate {
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         switch(snapState) {
         case .willSnap:
             let distanceFromSnapPoint = distance(between: scrollView.contentOffset, and: snapPoint)
-            let velocity = scrollView.panGestureRecognizer.velocityInView(view)
-            let velocityDistance = distance(between: velocity, and: CGPointZero)
+            let velocity = scrollView.panGestureRecognizer.velocity(in: view)
+            let velocityDistance = distance(between: velocity, and: CGPoint.zero)
             if distanceFromSnapPoint <= minDistanceToSnap && velocityDistance <= minVelocityToSnap && (snapDuringDecelerating || velocityDistance > 0.0) {
-                startSnapLocaion = scrollView.panGestureRecognizer.locationInView(scrollView)
+                startSnapLocaion = scrollView.panGestureRecognizer.location(in: scrollView)
                 snapState = .didSnap
             }
         case .didSnap:
             scrollView.setContentOffset(snapPoint, animated: false)
             var dragDistance = 0.0
-            let location = scrollView.panGestureRecognizer.locationInView(scrollView)
+            let location = scrollView.panGestureRecognizer.location(in: scrollView)
             dragDistance = distance(between: location, and: startSnapLocaion)
             if dragDistance > minDragDistanceToReleaseSnap  {
-                startSnapLocaion = CGPointZero
+                startSnapLocaion = CGPoint.zero
                 snapState = .willRelease
             }
         case .willRelease:
