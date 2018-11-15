@@ -4,7 +4,7 @@ Snap behavior in UIScrollView in Swift
 Needed this to answer a StackOverflow question:<br>
 [UIAnimator's UISnapBehavior possible with UIScrollview?](http://stackoverflow.com/q/38465498/1378447)
 
-###Question
+### Question
 What I am Trying to Achieve
 
 UIScrollView to 'snap' to certain point while the user is dragging the scroll view. However, the scrolling has to resume from snapped position without the user having to lift the touch.
@@ -13,7 +13,7 @@ Apple seems to achieve this in Photo Editing in their iOS Photos App. (See scree
 
 <p align="center"><img src="http://i.stack.imgur.com/1k57B.png"/></p>
 
-###Answer
+### Answer
 I've tried to mimic iOS Photos app. Here is my logic:
 
     // CALCULATE A CONTENT OFFSET FOR SNAPPING POINT 
